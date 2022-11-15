@@ -1,0 +1,345 @@
+.welcomeBlock {
+  display: flex;
+  justify-content: center;
+  background-color: #2B2223;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 20px 0 14px 0;
+
+  & > .welcomeBlockInnerWrapper {
+    width: 100%;
+    max-width: 1380px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      max-width: 1380px;
+      padding: 0 20px;
+    }
+
+    & > div {
+      padding: 0 5px;
+    }
+
+    & > .ourExpiriens {
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
+    }
+
+    & > .location {
+      display: flex;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+
+      & > div:nth-child(1) {
+        margin-right: 8px;
+      }
+
+      & > div:nth-child(2) {
+        margin-right: 16px;
+
+        @media screen and (max-width: 1100px) {
+          color: #B0A063;
+        }
+      }
+
+      & > div:nth-child(3) {
+        color: #B0A063;
+        cursor: pointer;
+
+        @media screen and (max-width: 1100px) {
+          display: none;
+        }
+      }
+    }
+
+    & > .button {
+      text-transform: uppercase;
+      background: #B0A063;
+      border-radius: 6px;
+      padding: 20px 40px;
+      color: #FFF;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #C4B88A;
+      }
+
+      &:active {
+        background-color: #897B45;
+      }
+
+      @media screen and (min-width: 1100px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  & > .headerWrapperBlockInner {
+    width: 100%;
+    max-width: 1380px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1100px) {
+      width: 95%;
+    }
+
+    & > .link {
+      white-space: nowrap;
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #B0A063;
+      margin: 0 5px;
+
+      &:hover {
+        color: #897B45;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    & > .button {
+      text-transform: uppercase;
+      background: #B0A063;
+      border-radius: 6px;
+      padding: 20px 40px;
+      color: #FFF;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #C4B88A;
+      }
+
+      &:active {
+        background-color: #897B45;
+      }
+
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    & > .contactData {
+      & > .telNumber {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 130%;
+      }
+
+      & > .email {
+        margin-top: 6px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #B0A063;
+
+        &:hover {
+          color: #897B45;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  @media screen and (max-width: 920px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 675px) {
+    display: none;
+  }
+}
+
+.desctopVersion {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileVersion {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 5px 0;
+    margin: auto;
+  }
+
+  & > .button {
+    text-transform: uppercase;
+    background: #B0A063;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+
+    &:hover {
+      background-color: #C4B88A;
+    }
+
+    &:active {
+      background-color: #897B45;
+    }
+  }
+
+  & > .contactData {
+
+    & > .telNumber {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 130%;
+    }
+
+    & > .email {
+      margin-top: 6px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #B0A063;
+    }
+  }
+
+  & > .burgerMenuOpen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 18px 30px 20px;
+    width: 54px;
+    height: 50px;
+    background: #B0A063;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #C4B88A;
+    }
+
+    &:active {
+      background-color: #897B45;
+    }
+  }
+}
+
+.burgerMenuContainer {
+  overflow-y: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1D2027;
+  width: 100%;
+  height: calc(100% - 108px);
+  color: #FFF;
+  padding: 50px 20px 100px 20px;
+
+  .linkContainer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    & > div {
+
+      & > div {
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #B0A063;
+      }
+    }
+  }
+
+  & .location {
+    display: flex;
+    margin-bottom: 30px;
+
+    & > div:nth-child(1) {
+      margin-right: 8px;
+    }
+
+    & > div:nth-child(2) {
+      margin-right: 16px;
+    }
+
+    & > div:nth-child(3) {
+      color: #B0A063;
+    }
+  }
+
+  & .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background: #B0A063;
+    border-radius: 6px;
+    padding: 20px 40px;
+    color: #FFF;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #C4B88A;
+    }
+
+    &:active {
+      background-color: #897B45;
+    }
+  }
+}
+
+
+.telNumber {
+  &:hover {
+    color: #897B45;
+  }
+}

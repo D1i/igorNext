@@ -1,0 +1,82 @@
+@import "styles/colors";
+@import "styles/media";
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  transition: 0.2s ease opacity;
+
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &:global(.entered) {
+    opacity: 1;
+  }
+}
+
+.modalContainer {
+  position: relative;
+
+  display: flex;
+
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100px;
+
+  max-height: 100vh;
+
+  transition: 0.2s transform ease;
+  transform: translateY(-100px);
+
+  outline: none;
+
+  background-color: white;
+
+  &:global(.entered) {
+    transform: translateY(0);
+  }
+
+  @include width_768 {
+    height: 100vh;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 24px;
+  height: 24px;
+
+  span {
+    position: absolute;
+    left: 0;
+
+    display: inline-block;
+
+    width: 24px;
+    height: 2px;
+
+    transform: rotate(45deg);
+
+    border-radius: 2px;
+    background-color: $color-black;
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}

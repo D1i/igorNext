@@ -1,0 +1,71 @@
+@import "normalize";
+@import "css-var";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: var(--app-height);
+  margin: 0;
+  padding: 0;
+
+  background-color: white;
+
+  font-family:
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+h1,
+h2 {
+  font-family: serif;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  main {
+    flex: auto;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.resetButton {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.resetUl {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.container {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 24px;
+  padding-left: 24px;
+}

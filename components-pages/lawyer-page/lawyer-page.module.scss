@@ -1,0 +1,91 @@
+@use "styles/colors" as *;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  justify-content: space-between;
+  color: $color-primary;
+  margin-top: 32px;
+  gap: 20px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: darken($color-secondary, 5)
+}
+
+.description {
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.25rem 0;
+    line-height: 1.5rem;
+    color: $color-gray;
+  }
+
+  h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.contacts {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+  font-style: italic;
+
+  a {
+    color: $color-secondary;
+  }
+}
+
+.images {
+  max-width: 640px;
+  width: 100%;
+}
+
+.carousel {
+  margin-top: 2rem;
+}
+
+.buttons {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.next,
+.back {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 275px;
+  color: #000;
+  background-color: $color-secondary;
+  border-radius: 3px;
+  font-weight: 500;
+  min-height: 50px;
+  padding: 0 40px;
+
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.back {
+  margin-right: 16px;
+}

@@ -1,0 +1,28 @@
+@import "styles/colors";
+
+.button {
+  min-height: 50px;
+  margin: 0;
+  padding: 0 40px;
+
+  color: $color-white;
+
+  border: none;
+  border-radius: 3px;
+
+  font-weight: 500;
+}
+
+.secondaryColor {
+  transition: 0.2s background-color ease;
+
+  background-color: $color-secondary;
+
+  &:hover {
+    background-color: darken($color-secondary, 10%);
+  }
+
+  &:active {
+    background-color: lighten($color-secondary, 5%);
+  }
+}

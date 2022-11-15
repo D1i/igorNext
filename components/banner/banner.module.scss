@@ -1,0 +1,55 @@
+@import "styles/colors";
+@import "styles/media";
+
+.banner {
+  display: flex;
+
+  overflow: hidden;
+  align-items: center;
+
+  min-height: calc(var(--app-height) - 143px);
+
+  background: $color-primary;
+
+  @include width_768 {
+    min-height: calc(var(--app-height) - 85px);
+  }
+
+  .button {
+    max-width: 275px;
+    margin-top: 30px;
+
+    color: $color-black;
+  }
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.title {
+  margin: 0;
+
+  font-size: 4rem;
+
+  @include width_768 {
+    font-size: 3.25rem;
+  }
+
+  @include width_600 {
+    font-size: 2.5rem;
+  }
+
+  @include width_480 {
+    font-size: 1.6rem;
+  }
+}
+
+.description {
+  p {
+    color: $color-gray-lighten;
+
+    font-style: italic;
+  }
+}

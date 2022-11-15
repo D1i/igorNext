@@ -1,0 +1,53 @@
+@import "styles/colors";
+@import "styles/media";
+
+.section {
+  display: flex;
+  align-items: center;
+
+  min-height: 200px;
+  overflow: hidden;
+
+  background-color: $color-primary;
+
+  @include width_768 {
+    min-height: 150px;
+    padding: 2rem 0;
+  }
+
+  h1,
+  .title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: serif;
+
+    color: $color-secondary;
+
+    font-size: 2.25rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    line-height: 1.5rem;
+  }
+
+  a,
+  span {
+    color: $color-white;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.separator {
+  padding: 0 0.5rem;
+}

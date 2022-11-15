@@ -1,0 +1,51 @@
+@use "styles/colors" as *;
+@import "styles/media";
+
+.container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  margin-right: 1rem;
+  padding: .75rem;
+  max-width: 456px;
+  background-color: $color-white;
+  box-shadow: 0 0 1rem $color-gray;
+  border-radius: .5rem;
+  transform: translateX(calc(-100% - 2rem));
+  transition: .5s transform ease;
+
+  @include width_480 {
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0 1rem 0 0;
+    font-size: .75rem;
+    line-height: 1rem;
+
+    @include width_480 {
+      margin: 0;
+    }
+  }
+
+  &:global(.entered) {
+    transform: translateX(0);
+  }
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  font-size: .875rem;
+  font-weight: 600;
+  color: $color-primary;
+
+  @include width_480 {
+    margin-top: .75rem;
+    width: 100%;
+  }
+}

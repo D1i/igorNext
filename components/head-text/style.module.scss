@@ -1,0 +1,24 @@
+.headTextContainer {
+  height: 55px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 550px) {
+    font-size: 32px;
+  }
+
+  & > div {
+    display: inline;
+  }
+}
+
+.firstPart {
+  color: #1D2027;
+}
+
+.secondPart {
+  color: #B0A063;
+}

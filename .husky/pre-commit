@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd nextjs
+npx lint-staged
+npm run prettier-style
+npm run build

@@ -1,0 +1,49 @@
+@use "styles/colors" as *;
+@use "styles/media" as *;
+
+.section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 40px;
+  row-gap: 0;
+
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+  @include width_768 {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    color: $color-primary;
+    font-size: 2.25rem;
+    margin-top: 0;
+
+    @include width_768 {
+      margin-top: 0.83em;
+    }
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .text {
+    font-style: italic;
+    color: $color-secondary;
+
+    &:last-child {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.list {
+  padding-left: 16px;
+
+  li {
+    list-style-type: '– ';
+    padding: 4px 0 4px 4px;
+    line-height: 24px;
+  }
+}

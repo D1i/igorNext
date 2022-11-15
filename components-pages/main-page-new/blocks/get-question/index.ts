@@ -1,0 +1,1 @@
+export {GetQuestion} from './get-question';

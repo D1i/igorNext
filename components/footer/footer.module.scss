@@ -1,0 +1,139 @@
+@import "styles/colors.scss";
+
+.footer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 465px;
+
+  margin-top: 100px;
+  padding-bottom: 75px;
+
+  background-color: $color-primary;
+  box-shadow: 0 0 10px black;
+}
+
+.logo {
+  max-width: 265px;
+  color: $color-gray-lighten;
+
+  p {
+
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+  }
+}
+
+.socialLinks {
+  display: flex;
+
+  margin-top: 65px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+
+    transition: 0.2s background-color ease;
+
+    border-radius: 5px;
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: darken($color-secondary, 10%);
+    }
+  }
+}
+
+.titleForList {
+  color: $color-secondary;
+
+  font-size: 1.5rem;
+
+  &::after {
+    display: block;
+
+    width: 30px;
+    height: 1px;
+    margin-top: 20px;
+
+    content: "";
+
+    background-color: $color-secondary;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  & > div {
+    align-self: stretch;
+
+    margin-top: 35px;
+    margin-right: 50px;
+  }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 75px;
+
+  color: $color-gray-lighten;
+
+  border-top: 1px solid $color-secondary;
+
+  font-size: 0.875rem;
+}
+
+.contactsList {
+  color: $color-white;
+
+  li {
+    height: 24px;
+    margin: 20px 0;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.info {
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  list-style: none;
+
+  li {
+    padding-bottom: .5rem;
+  }
+}

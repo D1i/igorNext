@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ermolaeva-patent.ru
+
+# Sitemaps
+Sitemap: https://ermolaeva-patent.ru/sitemap.xml

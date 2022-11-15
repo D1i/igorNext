@@ -1,0 +1,20 @@
+@import "styles/colors";
+
+.linkWrapper {
+  text-decoration: none;
+}
+
+.wrapper {
+  font-family: serif;
+  color: $color-primary;
+}
+
+.position {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.name {
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
