@@ -3,26 +3,28 @@ import Image from "next/image";
 
 import {Icon} from "@components/index";
 
+import logos from '@components-pages/main-page-new/logos'
+
 import s from './style.module.scss';
 
 const casesList = [
     {
-        imgUrl: '',
+        imgUrl: logos[0],
         description: 'Помогли крупному заводу преодолеть отказ Роспатента в регистрации товарного знака',
         status: 'Помогли'
     },
     {
-        imgUrl: '',
+        imgUrl: logos[1],
         description: 'Защитили немеского производителя от незаконного использования его товарного знака',
         status: 'Защитили'
     },
     {
-        imgUrl: '',
+        imgUrl: logos[2],
         description: 'Защитили от взыскания 5 млн ₽ производителя медицинских информационных систем',
         status: 'Защитили'
     },
-    {imgUrl: '', description: 'Что-то 1', status: 'Сделали)'},
-    {imgUrl: '', description: 'Что-то 2', status: 'Что-то еще'},
+    {imgUrl: logos[3], description: 'Что-то 1', status: 'Сделали)'},
+    {imgUrl: logos[4], description: 'Что-то 2', status: 'Что-то еще'},
 ];
 
 function CaseList(props: any) {
@@ -41,7 +43,7 @@ function CaseList(props: any) {
                 casesLayout.push(
                     <div className={s.caseContainer}>
                         <div>
-                            <Image className={s.caseLogo} src={p.url} alt={p.url}/>
+                            <Image className={s.caseLogo} src={p.imgUrl} alt={p.name}/>
                             <div>{p.description}</div>
                         </div>
                         <div>
@@ -60,7 +62,7 @@ function CaseList(props: any) {
                 casesLayout.push(
                     <div className={s.caseContainer}>
                         <div>
-                            <Image className={s.caseLogo} src="" alt={p.url}/>
+                            <Image className={s.caseLogo} src={p.imgUrl ? p.imgUrl : Icon} alt={p.name}/>
                             <div>{p.description}</div>
                         </div>
                         <div>

@@ -1,4 +1,4 @@
-export const icons: {} = {
+export const icons: {[key: string]: any} = {
     logo: (<svg width="250" height="55" viewBox="0 0 250 55" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_21_2736)">
                 <path

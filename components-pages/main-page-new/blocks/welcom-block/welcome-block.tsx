@@ -1,19 +1,23 @@
+import React from 'react'
 import Image from "next/image";
 
 import {Icon} from "@components/icon";
+
+import background from './img/img.png';
 
 import s from './style.module.scss';
 
 export function WelcomeBlock(props: any) {
     return (
         <div className={s.backgroundWrapper}>
+            <div className={s.background}>
+                <Image src={background} layout='fill' objectFit='fill'/>
+            </div>
             <div className={s.contentContainer}>
-                {/*<div className={s.background}>*/}
-                {/*<Image width="2560" height="1280" placeholder="blur" src={require("./img/img.png")}/>*/}
-                {/*</div>*/}
                 <div className={s.infoContainer}>
                     <h1 className={s.header}>Бюро по защите интеллектуальных прав</h1>
-                    <div className={s.description}>Решаем любые задачи по защите и регистрации интеллектуальных прав на
+                    <div className={s.description}>Решаем любые задачи по защите и регистрации интеллектуальных прав
+                        на
                         протяжении 20 лет
                     </div>
                     <div className={s.benefitsList}>

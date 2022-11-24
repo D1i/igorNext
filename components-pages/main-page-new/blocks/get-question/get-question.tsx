@@ -3,7 +3,10 @@ import Image from "next/image";
 import axios from "axios";
 import {Store} from "react-notifications-component";
 
-import {PhoneField} from "../../../../components/phone-field";
+import {PhoneField} from "@components/phone-field";
+
+import avatar from './img/avatar.png';
+import background from './img/Rectangle 11.png';
 
 import s from './style.module.scss';
 
@@ -14,7 +17,7 @@ export function GetQuestion(props: any) {
 
     function handleSend() {
 
-        axios.post('http://109.166.76.149:9990/contactData', {name, phone: phoneNumber, question, sell: false}).then(() => {
+        axios.post('http://localhost:9990/contactData', {name, phone: phoneNumber, question, sell: false}).then(() => {
             Store.addNotification({
                 title: "",
                 message: "Сообщение отправленно",
@@ -47,11 +50,14 @@ export function GetQuestion(props: any) {
 
     return (
         <div className={s.getQuestionWrapper}>
+            <div className={s.background}>
+                <Image src={background} layout='fixed' objectFit='fill'/>
+            </div>
             <div className={s.getQuestionContainer}>
                 <div className={s.leftBlock}>
                     <div className={s.header}>Задать вопрос <div className={s.goldHeader}>эксперту</div></div>
                     <div className={s.profilBlock}>
-                        <div className={s.avatar}><Image placeholder='blur' src={require('./img/avatar.png')}/></div>
+                        <div className={s.avatar}><Image placeholder='blur' src={avatar}/></div>
                         <div>
                             <div className={s.headerDescription}>На все вопросы ответит юрист по интеллектуальной
                                 собственности

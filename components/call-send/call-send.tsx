@@ -4,6 +4,8 @@ import Image from "next/image";
 import {Store} from "react-notifications-component";
 import axios from "axios";
 
+import avatar from './img/avatar.png';
+
 import {PhoneField} from "../phone-field";
 
 import s from './style.module.scss';
@@ -23,7 +25,8 @@ export function CallSend(props: any) {
             return;
         }
 
-        axios.post('http://109.166.76.149:9990/contactData', {name, phone, sell: false}).then(() => {
+        axios.post('http://localhost:9990/contactData', {name, phone, sell: false}).then(() => {
+            // console.log(Store)
             Store.addNotification({
                 title: "",
                 message: "Сообщение отправленно",
@@ -39,6 +42,7 @@ export function CallSend(props: any) {
             });
             props.onClose();
         }).catch(() => {
+            console.log(Store.addNotification)
             Store.addNotification({
                 title: "",
                 message: "Ошибка при отправке",
@@ -61,7 +65,7 @@ export function CallSend(props: any) {
                 <div>
                     <div className={props.hasSell ? s.profileUrist : s.hideBlock}>
                         <div className={s.img}>
-                            <Image placeholder="blur" width={150} height={150} src={require('./img/avatar.png')}/>
+                            <Image placeholder="blur" width={150} height={150} src={avatar}/>
                         </div>
                         <div>
                             <div className={s.description}>На все вопросы ответит юрист по интеллектуальной

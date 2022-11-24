@@ -5,7 +5,7 @@
 
 .ourTrustContainer {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1400px;
   padding: 0 20px;
   margin: auto;
   display: flex;
@@ -13,6 +13,7 @@
 
   @media screen and (max-width: 1100px) {
     width: 95%;
+    flex-direction: column;
   }
 
   @media screen and (max-width: 768px) {
@@ -26,6 +27,10 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
   }
 }
 
@@ -34,8 +39,17 @@
   flex-wrap: wrap;
   gap: 10px;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1400px;
   padding: 0 20px;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div {
+      width: calc(50% - 10px);
+    }
+  }
 }
 
 .logo {

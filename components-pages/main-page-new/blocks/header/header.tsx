@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import Link from "next/link";
-import disableScroll from 'disable-scroll';
 import axios from "axios";
 
 import {ShadowWrapper} from "@components/shadow-wrapper";
@@ -87,7 +86,7 @@ export function Header(props: any) {
     }
 
     useEffect(() => {
-        burgerMenuHasOpen ? disableScroll.on() : disableScroll.off();
+        // burgerMenuHasOpen ? disableScroll.on() : disableScroll.off();
     }, [burgerMenuHasOpen]);
 
     return (
@@ -96,7 +95,7 @@ export function Header(props: any) {
                                                                                              hasSell={false}/></ShadowWrapper>)}
             <div className={s.welcomeBlock}>
                 <div className={s.welcomeBlockInnerWrapper}>
-                    <div><Link href="/pages">{logo}</Link></div>
+                    <div className={s.mainLogo}><Link href="/">{logo}</Link></div>
                     <div className={s.ourExpiriens}>На защите интеллектуальной собственности более 20 лет</div>
                     <div className={s.location}>
                         <div>{iconLocation}</div>
@@ -105,16 +104,18 @@ export function Header(props: any) {
                     </div>
                     <div onClick={handleOpenCallSendBlock} className={s.button}>Бесплатная консультация</div>
                     <div className={s.social}>
-                        <div>{REFACTORING_social}</div>
+                        <Link passHref href='#'><a href='#' rel="noopener noreferrer"><Icon name='youtube'/></a></Link>
+                        <Link passHref href='viber://chat?number=%2B79371770210'><a href='viber://chat?number=%2B79371770210' target="_blank" rel="noopener noreferrer"><Icon name='whatsapp'/></a></Link>
+                        <Link passHref href='https://wa.me/+79371770210'><a href='https://wa.me/+79371770210' target="_blank" rel="noopener noreferrer"><Icon name='viber'/></a></Link>
+                        <Link passHref href='https://t.me/mariia_erm'><a href='https://t.me/mariia_erm' target="_blank" rel="noopener noreferrer"><Icon name='telegramm'/></a></Link>
                     </div>
                 </div>
             </div>
             <div className={`${s.header} ${s.desctopVersion}`}>
                 <div className={s.headerWrapperBlockInner}>
-                    <div className={s.link}><Link href='/pages'>Главная</Link></div>
-                    <div className={s.link}><Link href='/our-company'>О компании</Link></div>
+                    <div className={s.link}><Link href='/'>Главная</Link></div>
+                    <div className={s.link}><Link href='/about'>О компании</Link></div>
                     <div className={s.link}><Link href='/services'>Услуги</Link></div>
-                    <div className={s.link}><Link href='/portfolio'>Портфолио</Link></div>
                     <div className={s.link}><Link href='/team'>Команда</Link></div>
                     <div onClick={handleOpenCallSendBlock} className={s.button}>Бесплатная консультация</div>
                     <div className={s.contactData}>
@@ -139,12 +140,11 @@ export function Header(props: any) {
             {burgerMenuHasOpen && <div className={s.burgerMenuContainer}>
                 <div className={s.linkContainer}>
                     <div>
-                        <div className={s.link}><Link href='/pages'>Главная</Link></div>
-                        <div className={s.link}><Link href='/our-company'>О компании</Link></div>
-                        <div className={s.link}><Link href='/services'>Услуги</Link></div>
+                        <div className={s.link}><Link href='/'>Главная</Link></div>
+                        <div className={s.link}><Link href='/about'>О компании</Link></div>
                     </div>
                     <div>
-                        <div className={s.link}><Link href='/portfolio'>Портфолио</Link></div>
+                        <div className={s.link}><Link href='/services'>Услуги</Link></div>
                         <div className={s.link}><Link href='/team'>Команда</Link></div>
                     </div>
                 </div>

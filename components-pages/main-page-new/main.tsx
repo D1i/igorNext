@@ -10,7 +10,7 @@ import {
     QA, GetQuestion, OurTrust, Footer
 } from "./blocks";
 
-export function Main(props: any) {
+export function MainPage(props: any) {
     return (
         <div>
             <Header onCloseCallSend={props.onCloseCallSend}/>

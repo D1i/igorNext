@@ -5,7 +5,7 @@
 
   .footerContainer {
     width: 100%;
-    max-width: 1380px;
+    max-width: 1400px;
     padding: 100px 20px;
     margin: auto;
     display: flex;
@@ -60,10 +60,21 @@
 
   & .descriptionEmail {
     margin-bottom: 30px;
+
+    & > a {
+      text-decoration: none;
+      color: #FFF;
+
+      &:hover {
+        color: #C4B88A;
+      }
+    }
   }
 
   & .descriptionSocial {
     margin-bottom: 30px;
+    display: flex;
+    gap: 10px
   }
 
   & .descriptionMenu {
@@ -80,7 +91,6 @@
   & .metricBlock {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 }
 
@@ -139,5 +149,43 @@
   display: none;
   @media screen and (max-width: 480px) {
     display: flex;
+  }
+}
+
+.phoneNumber {
+  & > a {
+    font-weight: bold;
+    color: #B0A063;
+    text-decoration: none;
+
+    &:hover {
+      color: #897B45;
+    }
+  }
+}
+
+.link {
+  & a {
+    text-decoration: none;
+    color: #FFF;
+
+    &:hover {
+      color: #B0A063;
+    }
+  }
+}
+
+.userAccept {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & a {
+    text-decoration: none;
+    color: #FFF;
+
+    &:hover {
+      color: #C4B88A;
+    }
   }
 }

@@ -36,9 +36,9 @@ function QABlock(props: any) {
 
     return (
         <div className={s.blockContainer}>
-            <div onClick={handleToggle}><Icon name={isOpen ? 'short' : 'collapse'}/></div>
+            <div onClick={handleToggle} className={s['btn']}><div className={s['icon']}><Icon name={isOpen ? 'short' : 'collapse'}/></div></div>
             <div>
-                <div className={s.blockContainerHeader}>{props.blockContent.header}</div>
+                <div onClick={handleToggle} className={s.blockContainerHeader}>{props.blockContent.header}</div>
                 <div className={isOpen ? s.blockContainerDescription : s.hideContent}>
                     {props.blockContent.description}
                 </div>

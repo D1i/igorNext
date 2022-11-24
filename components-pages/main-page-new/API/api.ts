@@ -29,12 +29,14 @@ class API {
     POST(endpoint: any, data: any, callback: any) {
         const token = sessionStorage.getItem("token");
         const extendsData = {token};
+        // @ts-ignore
         extendsData[endpoint] = data;
         axios.post(`http://${url}/${endpoint}`, extendsData).then(p => {
             callback(p.data)
         })
     }
 
+    // @ts-ignore
     DELETE(endpoint, data, callback) {
         // const token = sessionStorage.getItem("token");
         // const extendsData = {token};
@@ -44,6 +46,7 @@ class API {
         // })
     }
 
+    // @ts-ignore
     PUT(endpoint, data, callback) {
         // axios.get(`http://${url}/${endpoint}`).then(p =>
         //     callback(p.data)

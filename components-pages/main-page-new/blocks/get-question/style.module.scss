@@ -1,6 +1,6 @@
 .getQuestionWrapper {
-  background-image: url("img/Rectangle 11.png");
-  background-size: cover;
+  position: relative;
+  overflow: clip;
 
   @media screen and (max-width: 768px) {
     background-image: none;
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1380px;
+    max-width: 1400px;
     padding: 100px 20px;;
     margin: auto;
     color: #FFF;
@@ -27,6 +27,7 @@
 
     & > .leftBlock {
       width: 400px;
+      z-index: 1;
 
       @media screen and (max-width: 768px) {
         width: auto;
@@ -110,6 +111,7 @@
 
       & > .textField:nth-child(4) {
         min-height: 150px;
+        padding: 20px 10px;
       }
 
       & > .textField::placeholder {
@@ -148,4 +150,11 @@
       }
     }
   }
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  height: 960px;
+  width: 100%;
 }

@@ -1,23 +1,26 @@
 .backgroundWrapper {
-  background-image: url("img/img.png");;
-  background-position: center;
-  background-size: cover;
+  overflow: clip;
 
   @media screen and (max-width: 550px) {
-    height: 300px;
+    color: #1D2027 !important;
   }
 }
 
 .contentContainer {
   margin: auto;
   width: 100%;
-  max-width: 1380px;
-  padding: 0 20px;
+  max-width: 1520px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   color: #FFFFFF;
+
+  @media screen and (max-width: 550px) {
+    color: #1D2027 !important;
+    padding: 20px;
+  }
+
   padding-bottom: 100px;
 
   @media screen and (max-width: 1100px) {
@@ -30,18 +33,18 @@
   }
 
   @media screen and (max-width: 550px) {
-    display: none;
   }
 
-  /*& > .background {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-  }*/
-
   & > .infoContainer {
-    max-width: 670px;
-    padding-top: 80px;
+    z-index: 1;
+    max-width: 750px;
+    padding: 70px;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 550px) {
+      text-align: center;
+      padding: 0;
+    }
 
     & > .header {
       font-weight: 700;
@@ -108,9 +111,24 @@
       }
       & > div:nth-child(2) {
         grid-area: 1/2/1/2;
+        margin-left: 10px;
       }
       & > div:nth-child(3) {
         grid-area: 1/1/1/1;
+      }
+
+      @media screen and (max-width: 550px) {
+        display: flex;
+        flex-direction: column-reverse;
+
+        & > div:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+
+          & > div {
+            width: 100% !important;
+          }
+        }
       }
     }
 
@@ -201,5 +219,17 @@
   @media screen and (max-width: 550px) {
     display: block;
     padding-top: 100%;
+  }
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  height: 960px;
+  width: 100%;
+
+  @media screen and (max-width: 550px) {
+    position: relative;
+    height: 300px;
   }
 }

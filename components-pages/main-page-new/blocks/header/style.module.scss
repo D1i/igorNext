@@ -10,7 +10,7 @@
 
   & > .welcomeBlockInnerWrapper {
     width: 100%;
-    max-width: 1380px;
+    max-width: 1400px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@
 
     @media screen and (max-width: 1100px) {
       width: 100%;
-      max-width: 1380px;
+      max-width: 1400px;
       padding: 0 20px;
     }
 
@@ -93,10 +93,11 @@
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  box-shadow: #545D71 1px 1px 5px;
 
   & > .headerWrapperBlockInner {
     width: 100%;
-    max-width: 1380px;
+    max-width: 1400px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -114,8 +115,15 @@
       border-bottom: 2px solid #B0A063;
       margin: 0 5px;
 
+      & > a {
+        color: #1D2027;
+        text-decoration: none;
+      }
+
       &:hover {
-        color: #897B45;
+        & > a {
+          color: #897B45;
+        }
       }
 
       @media screen and (max-width: 768px) {
@@ -164,10 +172,16 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
-        color: #B0A063;
+
+        & > a {
+          color: #B0A063;
+          text-decoration: none;
+        }
 
         &:hover {
-          color: #897B45;
+          & > a {
+            color: #897B45;
+          }
         }
       }
     }
@@ -175,16 +189,15 @@
 }
 
 .social {
+  display: flex;
+  gap: 10px;
+
   @media screen and (max-width: 920px) {
     display: none;
   }
 
   @media screen and (max-width: 750px) {
-    display: block;
-  }
-
-  @media screen and (max-width: 750px) {
-    display: block;
+    display: flex;
   }
 
   @media screen and (max-width: 675px) {
@@ -245,6 +258,11 @@
       font-size: 15px;
       line-height: 18px;
       color: #B0A063;
+
+      & > a {
+        color: #B0A063;
+        text-decoration: none;
+      }
     }
   }
 
@@ -280,6 +298,7 @@
   height: calc(100% - 108px);
   color: #FFF;
   padding: 50px 20px 100px 20px;
+  z-index: 2;
 
   .linkContainer {
     display: flex;
@@ -288,6 +307,15 @@
     font-size: 17px;
     line-height: 21px;
     text-transform: uppercase;
+
+    & a {
+      text-decoration: none;
+      color: #FFF;
+
+      &:hover {
+        color: #C4B88A;
+      }
+    }
 
     & > div {
 
@@ -339,7 +367,19 @@
 
 
 .telNumber {
-  &:hover {
-    color: #897B45;
+
+  & > a {
+    color: #1D2027;
+    text-decoration: none;
   }
+
+  &:hover {
+    & > a {
+      color: #897B45;
+    }
+  }
+}
+
+.mainLogo {
+  cursor: pointer;
 }

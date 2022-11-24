@@ -1,1 +1,1 @@
-export {OurTeam} from './our-team.js';
+export {OurTeam} from './our-team';

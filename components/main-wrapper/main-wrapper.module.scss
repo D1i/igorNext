@@ -2,8 +2,6 @@
 @import "styles/media";
 
 .main {
-  margin-top: 145px;
-
   @include width_979() {
     margin-top: 85px;
   }

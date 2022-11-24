@@ -26,6 +26,9 @@
   font-size: 17px;
   line-height: 130%;
   color: #1D2027;
+  max-height: 500px;
+  text-overflow: ellipsis;
+  overflow-x: auto;
 }
 
 .apruvDocument {
@@ -81,6 +84,7 @@
     height: 62px;
     border-radius: 6px;
     background-size: cover;
+    cursor: pointer;
 
     & > div {
       width: 64px;

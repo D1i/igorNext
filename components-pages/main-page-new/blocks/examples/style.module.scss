@@ -1,6 +1,6 @@
 .examplesContainer {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1400px;
   margin: auto;
   padding: 80px 20px 80px 20px;
 
@@ -47,9 +47,9 @@
   }
 
   .shortController {
-    display: none;
+    display: none !important;
     @media screen and (max-width: 768px) {
-      display: flex;
+      display: flex !important;
     }
   }
 
@@ -68,7 +68,7 @@
       align-items: flex-start;
       justify-content: space-between;
       width: 32%;
-      height: 290px;
+      main-height: 290px;
       padding: 30px;
       border: 2px solid #1D2027;
       border-radius: 6px;

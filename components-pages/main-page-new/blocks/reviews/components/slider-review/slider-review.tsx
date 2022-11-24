@@ -2,9 +2,11 @@ import {Icon} from "@components/index";
 
 import Image from "next/image";
 
+import doc from '../../img/araviaDocuments.png';
+
 import s from './style.module.scss';
 
-export function SliderReview(props) {
+export function SliderReview(props: any) {
     // const reviewsGeted = new Services().reviews().get();
 
     function handleSwitchLeft() {
@@ -21,13 +23,15 @@ export function SliderReview(props) {
         props.setCurrent(props.current + 1);
     }
 
+    console.log(props)
+
     return (
         <div className={s.reviewContainer}>
             <div className={s.reviewText}>{props.reviews[props.current].review}</div>
             <div className={s.apruvDocument}>
                 <div className={s.apruvDocumentImage}><Image
                     placeholder='blur'
-                    width="400" src={require('../../img/araviaDocuments.png')}
+                    width="400" src={props?.reviews[props.current]?.layoutApruve ? props.reviews[props.current].layoutApruve : doc}
                     alt="docs"/></div>
                 <div className={s.nameApruver}>
                     <div>{props.reviews[props.current].reviewer}</div>
@@ -42,10 +46,5 @@ export function SliderReview(props) {
     )
 }
 
-// TODO вкладку контакты не добавлять
 // TODO на мобилке отключить hover
-// TODO Блок услуг перенести на страницу услуг, убрать с главной | OK
-// TODO Блок контактов перенести на другую страницу
-// TODO по ip определять регион
-// TODO бд для IP
 // TODO НЕ ДЕЛАТЬ СКИДКУ ЧЕРЕЗ 30 СЕКУНД

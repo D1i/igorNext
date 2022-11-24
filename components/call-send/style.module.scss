@@ -1,9 +1,13 @@
 .callSendContainer {
   display: flex;
-  z-index: 2;
+  z-index: 3;
   width: 50%;
   min-width: 950px;
   position: fixed;
+
+  @media screen and (max-width: 768px) {
+    min-width: 450px;
+  }
 }
 
 .leftBlock, .rightBlock {
@@ -14,6 +18,7 @@
 .leftBlock {
   background-color: #1D2027;
   color: #FFF;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -42,7 +47,7 @@
 
     & > div:first-child {
       width: 100%;
-      max-width: 1380px;
+      max-width: 1400px;
       padding: 0 20px;
     }
   }
@@ -219,6 +224,15 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 130%;
+
+    & a {
+      text-decoration: none;
+      color: #1D2027;
+
+      &:hover {
+        color: #C4B88A;
+      }
+    }
 
     & div:first-child {
 

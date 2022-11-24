@@ -1,6 +1,6 @@
 .QAContainer {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1400px;
   padding: 0 20px;
   margin: 100px auto;
 
@@ -13,6 +13,11 @@
     padding-left: 10px;
   }
 
+  @media screen and (max-width: 480px) {
+    margin: auto;
+    padding-left: 20px;
+  }
+
   & .QABlocksContainer {
     display: flex;
     flex-direction: column;
@@ -22,6 +27,10 @@
   & > .QAController {
     padding: 30px;
     background-color: #F1F1F5;
+
+    @media screen and (max-width: 480px) {
+      padding: 30px 10px;
+    }
 
     & .blockContainer {
       display: flex;
@@ -42,6 +51,11 @@
           font-size: 24px;
           line-height: 130%;
           margin-bottom: 17px;
+          cursor: pointer;
+
+          @media screen and (max-width: 480px) {
+            font-size: 17px;
+          }
         }
 
         & > .blockContainerDescription {
@@ -51,5 +65,15 @@
         }
       }
     }
+  }
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.icon {
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 }

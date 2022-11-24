@@ -3,7 +3,7 @@
 
   .ourTeamContainer {
     width: 100%;
-    max-width: 1380px;
+    max-width: 1400px;
     margin: auto;
     padding: 80px 20px 80px 20px;
 
@@ -62,14 +62,20 @@
             margin-top: 20px;
           }
 
-          & > .diplomas {
+          & .diplomas {
             display: flex;
             gap: 10px;
             margin-top: 50px;
+            overflow: clip;
 
-            & > img {
+            & > div {
               width: 93px;
-              height: 132px;
+              height: 150px;
+            }
+
+            & img {
+              width: 93px;
+              height: 150px;
             }
           }
         }
@@ -98,4 +104,25 @@
       }
     }
   }
+}
+
+.short-img-wrapper {
+  overflow: auto;
+  height: 200px;
+}
+
+.short-img-container {
+  display: flex;
+  gap: 10px;
+  width: 2000px;
+}
+
+.natalya-img-container {
+  display: flex;
+  gap: 10px;
+}
+
+.short-img {
+  width: 100px;
+  height: 150px;
 }

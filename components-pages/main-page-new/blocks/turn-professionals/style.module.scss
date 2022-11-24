@@ -4,7 +4,7 @@
 
   & > div {
     width: 100%;
-    max-width: 1380px;
+    max-width: 1400px;
     padding: 0 20px;
     margin: auto;
 
@@ -22,14 +22,14 @@
 .listContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .listParaghraf {
   width: 30%;
   height: 450px;
   padding: 30px;
-  margin: 15px;
   background-color: #FFF;
   position: relative;
 
@@ -37,7 +37,7 @@
     height: 550px;
   }
 
-  @media screen and (max-width: 1310px) {
+  @media screen and (max-width: 980px) {
     width: 45%;
   }
 
@@ -91,6 +91,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
+  }
 }
 
 .list > div {
@@ -111,6 +115,15 @@
   color: #B0A063 !important;
   position: absolute;
   bottom: 30px;
+
+  & a {
+    text-decoration: none;
+    color: #B0A063;
+
+    &:hover {
+      color: #C4B88A;
+    }
+  }
 }
 
 .hyphen {

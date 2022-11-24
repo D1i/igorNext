@@ -31,7 +31,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> в Суде</div>
                         <div><Рyphen/> в Полиции</div>
                         <div><Рyphen/> в Таможне</div>
-                        <div className={s.more}><Link href="/benefits/protect-rights">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/zashchishchayem-vashi-prava">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -47,7 +47,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Программы для ЭВМ и базы данных</div>
                         <div><Рyphen/> Географические указания</div>
                         <div><Рyphen/> Изобретения</div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/registriruem">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -60,7 +60,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> от недопросовестной конкуренции</div>
                         <div><Рyphen/> незаконной рекламы и контрафакта</div>
                         <div><Рyphen/> Незаконного использования и нарушения прав</div>
-                        <div className={s.more}><Link href="/benefits/defends">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/zashchishchayem">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -74,7 +74,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Изобретений, полезных моделей, промышленных образцов</div>
                         <div><Рyphen/> Фирменных наименований и коммерческих обозначений</div>
                         <div><Рyphen/> Авторских и смежных прав</div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/uchavstvuem-v-sporah-po-zashite">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -88,7 +88,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Договоры коммерческой концессии</div>
                         <div><Рyphen/> Договоры отчуждения исключетльных прав на объекты интеллектуальной собственности
                         </div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/sostavlyaem-i-regystriruem">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -103,7 +103,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Защита авторских прав в Интернете</div>
                         <div><Рyphen/> Составление договоров</div>
                         <div><Рyphen/> Оспаривание авторства</div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/avtorskoe-pravo">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -115,7 +115,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Копировании контента сайта</div>
                         <div><Рyphen/> Обнаружении Сайта двойника</div>
                         <div><Рyphen/> Нарушении прав на товарные знаки, объекты авторских прав</div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/zashchishchayem-vashi-prava-v-seti">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -131,7 +131,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Объектов авторского, смежного и патентного права</div>
                         <div><Рyphen/> Закупка контрафактного товара</div>
                         <div><Рyphen/> Документов, чертежей, изображений, товарных знаков</div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/fiksacya-docazatelstv">Подробнее</Link></div>
                     </div>
                 </div>
                 <div className={s.listParaghraf}>
@@ -144,7 +144,7 @@ export function TurnProfessionals(props: any) {
                         <div><Рyphen/> Дистанционное обслуживание</div>
                         <div><Рyphen/> Досудебное урегулирование споров</div>
                         <div><Рyphen/> Представительство в иногородних судах</div>
-                        <div className={s.more}><Link href="/benefits">Подробнее</Link></div>
+                        <div className={s.more}><Link href="/services/innye-uslugi">Подробнее</Link></div>
                     </div>
                 </div>
             </div>
