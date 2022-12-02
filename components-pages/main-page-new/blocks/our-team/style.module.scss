@@ -1,0 +1,128 @@
+.background {
+  background-color: #F1F1F5;
+
+  .ourTeamContainer {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 80px 20px 80px 20px;
+
+    @media screen and (max-width: 1100px) {
+      width: 95%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    & > .personList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      & > .person {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 6px;
+        background: #FFFFFF;
+
+        & > .leftBlock {
+          width: 25%;
+
+          & > .avatar {
+            border-radius: 6px;
+            width: 100%;
+          }
+        }
+
+        & > .rightBlock {
+          width: 75%;
+
+          & > .name {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 130%;
+            color: #B0A063;
+          }
+
+          & > .experience {
+            align-items: flex-start;
+            padding: 20px 30px;
+            border: 2px solid #B0A063;
+            border-radius: 6px;
+            color: #1D2027;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            margin-top: 20px;
+          }
+
+          & .diplomas {
+            display: flex;
+            gap: 10px;
+            margin-top: 50px;
+            overflow: clip;
+
+            & > div {
+              width: 93px;
+              height: 150px;
+            }
+
+            & img {
+              width: 93px;
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .infoBlockContainer {
+    & > .infoBlockHeader {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: #1D2027;
+      margin: 30px 0 20px 0;
+    }
+
+    & > .infoBlockListContainer {
+      & > .infoParagraph {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        & > .infoParagraphText {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}
+
+.short-img-wrapper {
+  overflow: auto;
+  height: 200px;
+}
+
+.short-img-container {
+  display: flex;
+  gap: 10px;
+  width: 2000px;
+}
+
+.natalya-img-container {
+  display: flex;
+  gap: 10px;
+}
+
+.short-img {
+  width: 100px;
+  height: 150px;
+}

@@ -1,0 +1,25 @@
+@use "styles/colors" as *;
+
+.page {
+  h2 {
+    padding-top: 1.5rem;
+  }
+
+  p,
+  ul,
+  li {
+    line-height: 1.5rem;
+    color: $color-gray;
+  }
+
+  p {
+    text-align: justify;
+    color: $color-gray;
+  }
+
+  ul li {
+    color: $color-gray;
+    list-style-type: "—";
+    padding-left: 8px;
+  }
+}

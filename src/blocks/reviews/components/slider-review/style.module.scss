@@ -1,0 +1,89 @@
+.reviewContainer {
+  position: relative;
+  padding: 40px 50px;
+  width: 1386px;
+  height: 500px;
+  gap: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #F1F1F5;
+  border-radius: 6px;
+  margin: 40px auto;
+}
+
+.reviewText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 11px;
+  width: 793px;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #1D2027;
+}
+
+.apruvDocument {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 30px;
+  width: 423px;
+  border: 1px solid #C1C7CF;
+  border-radius: 6px;
+}
+
+.apruvDocumentImage {
+  border-radius: 4px;
+}
+
+.nameApruver {
+  & div:first-child {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #1D2027;
+    margin-bottom: 14px;
+  }
+
+  & div:last-child {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #545D71;
+  }
+}
+
+.controllerContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 20px 20px;
+  gap: 10px;
+  bottom: -50px;
+
+  & > div {
+    width: 64px;
+    height: 62px;
+    border-radius: 6px;
+    background-size: cover;
+
+    & > div {
+      width: 64px;
+      height: 62px;
+    }
+  }
+
+  & div:first-child {
+  }
+
+  & div:last-child {
+    transform: rotate(180deg);
+  }
+}

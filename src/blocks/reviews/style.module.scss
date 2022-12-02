@@ -1,0 +1,84 @@
+.reviewersContainer {
+  padding: 0 267px;
+}
+
+.reviewersLogo {
+  display: flex;
+}
+
+.logo {
+  border: 1px solid #E1E1E1;
+  border-radius: 6px;
+  width: 160px;
+  height: 70px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.selectedLogo {
+  border: 2px solid #B0A063;
+}
+
+.garantBlock {
+  display: flex;
+  margin-top: 100px;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 427px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1D2027;
+
+    & .descriptionContainer {
+      display: flex;
+      margin-bottom: 30px;
+
+      & .descriptionHeaders {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+
+        & div {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    & .offer {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: #1D2027;
+    }
+
+    & .offerDescription {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 130%;
+      color: #1D2027;
+    }
+
+    & .garantBlockButton {
+      margin-top: 20px;
+    }
+
+    & .garantedServices {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 130%;
+      color: #1D2027;
+      display: flex;
+      margin-bottom: 16px;
+
+      & div:last-child {
+        margin-left: 14px;
+      }
+    }
+  }
+}

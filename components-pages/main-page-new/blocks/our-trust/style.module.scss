@@ -1,0 +1,64 @@
+.ourTrustWrapper {
+  padding: 100px 0;
+  background-color: #F1F1F5;
+}
+
+.ourTrustContainer {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1100px) {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  & .ourTrustDescription {
+    width: 340px;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+}
+
+.ourTrustLogoLists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div {
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+.logo {
+  width: calc(20% - 15px);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 6px;
+  cursor: pointer;
+}

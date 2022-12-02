@@ -1,0 +1,44 @@
+@import "styles/colors";
+@import "styles/media";
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  label {
+    padding-bottom: 0.5rem;
+  }
+
+  input {
+    height: 50px;
+    padding: 0 1rem;
+  }
+
+  textarea {
+    height: 100px;
+    padding: 1rem;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 1.5rem;
+
+    border: 1px solid $color-gray;
+    background-color: transparent;
+  }
+
+  button {
+    margin-left: auto;
+
+    @include width_768 {
+      margin: 0;
+    }
+  }
+}
+
+.title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

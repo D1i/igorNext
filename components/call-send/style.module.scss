@@ -1,0 +1,250 @@
+.callSendContainer {
+  display: flex;
+  z-index: 3;
+  width: 50%;
+  min-width: 950px;
+  position: fixed;
+
+  @media screen and (max-width: 768px) {
+    min-width: 450px;
+  }
+}
+
+.leftBlock, .rightBlock {
+  width: 100%;
+  padding: 30px;
+}
+
+.leftBlock {
+  background-color: #1D2027;
+  color: #FFF;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+    .callHeaderDarkTheme {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    & div:last-child {
+      color: #B0A063;
+    }
+  }
+
+  .profileUrist {
+    display: flex;
+    padding-bottom: 30px;
+
+
+    & > div:first-child {
+      width: 30%;
+    }
+
+    & > div:first-child {
+      width: 100%;
+      max-width: 1400px;
+      padding: 0 20px;
+    }
+  }
+
+  .img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .bonusList {
+    display: flex;
+    padding: 30px 0;
+    border-top: 1px solid #545D71;
+
+    & > div {
+      width: 50%;
+    }
+
+    & > div:first-child {
+      padding-right: 30px;
+      border-right: 1px solid #545D71;
+    }
+
+    & > div:last-child {
+      padding-left: 30px;
+    }
+  }
+
+  .bonusListHeader {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #B0A063;
+    margin-bottom: 10px;
+  }
+
+  .sell > div {
+    padding-top: 30px;
+    border-top: 1px solid #545D71;
+
+    & > .sellHeader {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 130%;
+      text-align: center;
+    }
+
+    & > .timerContainer {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 20px;
+
+      & > .timerCountContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & > .timerCountBlock {
+          font-weight: 700;
+          font-size: 42px;
+          line-height: 130%;
+          color: #B0A063;
+        }
+
+        & > .timerCountUnit {
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 130%;
+        }
+      }
+    }
+  }
+}
+
+.rightBlock {
+  background-color: #FFF;
+  color: #1D2027;
+
+  & > .callHeader {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    text-transform: uppercase;
+
+    & div:last-child {
+      color: #B0A063;
+    }
+  }
+
+  & .callDescription {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    padding-top: 10px;
+  }
+
+  & .callFieldBlock {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & > div {
+      position: relative;
+
+      & > div:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #E1E1E1;
+        bottom: 0;
+
+        transition-duration: 0.2s;
+      }
+
+      & > input:focus ~ div:before {
+        bottom: 5px;
+        background-color: #A1A1A1;
+      }
+
+      & > input {
+        background-color: #FFFFFF;
+        outline: none;
+        padding: 20px 0 20px 10px;
+        border: none;
+        font-size: 17px;
+        line-height: 130%;
+        width: 100%;
+      }
+    }
+  }
+
+  .callButtonSend {
+    text-align: center;
+    padding: 18px 30px;
+    width: 216px;
+    height: 56px;
+    background-color: #B0A063;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: #C4B88A;
+    }
+
+    &:active {
+      background-color: #897B45;
+    }
+  }
+
+  .politicleConfirm {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+
+    & a {
+      text-decoration: none;
+      color: #1D2027;
+
+      &:hover {
+        color: #C4B88A;
+      }
+    }
+
+    & div:first-child {
+
+    }
+
+    & div:last-child {
+      color: #B0A063;
+      cursor: pointer;
+    }
+  }
+}
+
+.hideBlock {
+  display: none;
+}

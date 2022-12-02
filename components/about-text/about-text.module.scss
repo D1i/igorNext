@@ -1,0 +1,60 @@
+@use "styles/colors" as *;
+@use "styles/media" as *;
+
+.container {
+  padding-bottom: 2rem;
+
+  @include width_979 {
+    flex-direction: column;
+  }
+
+  h3 {
+    margin-top: 0;
+    font-family: 'serif';
+    font-size: 24px;
+
+    @include width_768 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.title {
+  margin: 0;
+  padding-bottom: 12px;
+  color: $color-primary;
+  font-size: 3rem;
+}
+
+.text {
+  line-height: 1.5rem;
+  color: $color-gray;
+}
+
+.cards {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 20px;
+}
+
+.img {
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.card {
+  width: calc(50% - 10px);
+  display: flex;
+  align-items: flex-start;
+
+  @include width_768 {
+    width: 100%;
+  }
+
+  p {
+    color: $color-gray;
+  }
+}

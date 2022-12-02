@@ -1,0 +1,1 @@
+import {ContactInfo} from './contact-info';

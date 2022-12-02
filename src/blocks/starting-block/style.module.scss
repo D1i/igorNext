@@ -1,0 +1,110 @@
+.startBlockContainer {
+  background-image: url("img/img.png");
+  background-size: cover;
+  padding: 90px 200px;
+}
+
+.head {
+  width: 678px;
+  color: #B0A063;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.subHead {
+  width: 678px;
+  margin-top: 20px;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.list {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  margin-top: 16px;
+
+  & > div {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.check {
+  margin-right: 15px;
+}
+
+.blurBox {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(65.5px);
+  border-radius: 10px;
+  padding: 50px 67px;
+  margin-top: 50px;
+}
+
+.button {
+  padding: 20px 0;
+}
+
+.blurBoxRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blurBoxHeader {
+  color: #FFF;
+  width: 427px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;;
+  margin-bottom: 20px
+}
+
+.blurBoxText {
+  color: #FFF;
+  width: 427px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  margin-bottom: 20px
+}
+
+.blurBoxPharagraf, .blurBoxPharagrafExtend {
+  display: flex;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  align-items: center;
+}
+
+.blurBoxPharagrafExtend {
+  margin-bottom: 30px;
+}
+
+.blurBoxSpcialInfo {
+  margin-left: 20px;
+
+  & div:first-child {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+
+  & div:last-child {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+  }
+}

@@ -1,0 +1,56 @@
+.navigationContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 267px;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline;
+}
+
+.links {
+  display: block;
+}
+
+.burgerMenu {
+  display: none;
+  position: absolute;
+  right: 24px;
+}
+
+@media screen and (max-width: 1700px) {
+  .navigationContainer {
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 915px) {
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .navigationContainer {
+    justify-content: left;
+    padding-left: 24px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}

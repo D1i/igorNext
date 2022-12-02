@@ -1,0 +1,8 @@
+.socialContainer {
+  white-space: nowrap;
+
+  & > svg {
+    margin: 5px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,8 @@
+@import "styles/colors";
+@import "styles/media";
+
+.main {
+  @include width_979() {
+    margin-top: 85px;
+  }
+}

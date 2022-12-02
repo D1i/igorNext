@@ -1,0 +1,20 @@
+.number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1D2027;
+}
+
+.email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #B0A063;
+}
+
+@media screen and (max-width: 915px) {
+  .container {
+    margin-left: 24px;
+  }
+}

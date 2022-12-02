@@ -1,0 +1,1 @@
+export {OurTrust} from './our-trust';

@@ -1,0 +1,68 @@
+.call {
+  padding: 100px 0;
+  background-color: #F1F1F5;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 250px;
+}
+
+@media screen and (max-width: 1900px) {
+  .listContainer, .head {
+    padding: 0 200px;
+  }
+}
+
+.listParaghraf {
+  width: 380px;
+  height: 390px;
+  padding: 30px;
+  margin: 15px;
+  background-color: #FFF;
+  position: relative;
+}
+
+.paraghrafHeader {
+  color: #1D2027;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list > div {
+  color: #545D71;
+  width: 342px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.more {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #B0A063 !important;
+  position: absolute;
+  bottom: 30px;
+}
+
+.hyphen {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+
+  & > div {
+    display: flex;
+  }
+}

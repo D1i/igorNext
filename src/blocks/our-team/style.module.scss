@@ -1,0 +1,86 @@
+.ourTeamContainer {
+  padding: 0 267px;
+  background-color: #F1F1F5;
+
+  & > .personList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    & > .person {
+      display: flex;
+      gap: 30px;
+      width: 1386px;
+      padding: 30px;
+      border-radius: 6px;
+      background: #FFFFFF;
+
+      & > .leftBlock {
+        width: 25%;
+
+        & > .avatar {
+          border-radius: 6px;
+          width: 100%;
+        }
+      }
+
+      & > .rightBlock {
+        width: 75%;
+
+        & > .name {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 130%;
+          color: #B0A063;
+        }
+
+        & > .experience {
+          align-items: flex-start;
+          padding: 20px 30px;
+          border: 2px solid #B0A063;
+          border-radius: 6px;
+          color: #1D2027;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 130%;
+          margin-top: 20px;
+        }
+
+        & > .diplomas {
+          display: flex;
+          gap: 10px;
+          margin-top: 50px;
+
+          & > img {
+            width: 93px;
+            height: 132px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.infoBlockContainer {
+  & > .infoBlockHeader {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1D2027;
+    margin: 30px 0 20px 0;
+  }
+
+  & > .infoBlockListContainer {
+    & > .infoParagraph {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      & > .infoParagraphText {
+        margin-left: 14px;
+      }
+    }
+  }
+}

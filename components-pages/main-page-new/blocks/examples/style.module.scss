@@ -1,0 +1,112 @@
+.examplesContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 80px 20px 80px 20px;
+
+  @media screen and (max-width: 1100px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  & .headerContainer {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  & .header {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1D2027;
+  }
+
+  & .controller {
+    display: flex;
+    gap: 10px;
+
+    & div {
+      display: flex;
+    }
+
+    & div:last-child {
+      transform: rotate(180deg);
+    }
+  }
+
+  .fullSizeController {
+    @media screen and (max-width: 768px) {
+      display: none !important;
+    }
+  }
+
+  .shortController {
+    display: none !important;
+    @media screen and (max-width: 768px) {
+      display: flex !important;
+    }
+  }
+
+  & > .caseList {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      justify-content: space-around;
+    }
+
+    & > .caseContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 32%;
+      main-height: 290px;
+      padding: 30px;
+      border: 2px solid #1D2027;
+      border-radius: 6px;
+
+      @media screen and (max-width: 768px) {
+        width: 48%;
+      }
+
+        @media screen and (max-width: 900px) {
+        height: 320px;
+      }
+
+      & > div {
+        width: 100%;
+        padding-left: 10px;
+      }
+    }
+  }
+
+}
+
+.caseLogo {
+  height: 90px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px 16px;
+  gap: 10px;
+  background-color: #F1F1F5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1D2027;
+
+  & > div {
+    display: flex;
+  }
+}

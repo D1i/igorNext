@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+
+  @media screen and (max-width: 1100px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  & > .header {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1D2027;
+    margin-bottom: 40px;
+
+    & > .otherColorHeader {
+      color: #B0A063;
+    }
+
+    & .servicesContainer {
+      & .chapters {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 20px;
+        background-color: #1D2027;
+
+        & > .selected {
+        }
+
+      }
+    }
+  }
+}
+
+.chapters {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #1D2027;
+
+  & > .selected {
+    color: #B0A063;
+  }
+
+  & > div {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.chapterHeader {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1D2027;
+  margin-bottom: 10px;
+}
+
+.chapterDescription {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #1D2027;
+}
+
+.headerServicesList {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: #B0A063;
+  margin-top: 40px;
+}
+
+.serviceChapter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.chapterContainer {
+  width: 600px;
+}
+
+.mobile-controller-container {
+  &-head {
+    background-color: #1D2027;
+    padding: 14px 20px;
+    color: #B0A063;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-sub-header {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  &-description {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &-icon {
+    padding-right: 20px;
+
+    &-rotate {
+      transform: rotate(180deg);
+    }
+  }
+}

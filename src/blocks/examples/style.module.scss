@@ -1,0 +1,73 @@
+.examplesContainer {
+  padding: 0 267px;
+
+  & .headerContainer {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  & .header {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1D2027;
+  }
+
+  & .controller {
+    display: flex;
+    gap: 10px;
+
+    & div {
+      display: flex;
+    }
+
+    & div:last-child {
+      transform: rotate(180deg);
+    }
+  }
+
+  & > .caseList {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+
+    & > .caseContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 400px;
+      height: 290px;
+      padding: 30px;
+      border: 2px solid #1D2027;
+      border-radius: 6px;
+
+      & > div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.caseLogo {
+  height: 90px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px 16px;
+  gap: 10px;
+  background-color: #F1F1F5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1D2027;
+
+  & > div {
+    display: flex;
+  }
+}

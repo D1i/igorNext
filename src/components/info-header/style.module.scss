@@ -1,0 +1,25 @@
+.infoHeaderContainer {
+  background-color: #2B2223;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 267px;
+  justify-content: space-between;
+}
+
+.button {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 915px) {
+  .button {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .infoHeaderContainer {
+    justify-content: space-around;
+    padding: 0;
+  }
+}

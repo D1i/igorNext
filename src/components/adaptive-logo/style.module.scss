@@ -1,0 +1,17 @@
+.fullSize {
+  display: block;
+}
+
+.shortSize {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  .fullSize {
+    display: none;
+  }
+
+  .shortSize {
+    display: block;
+  }
+}

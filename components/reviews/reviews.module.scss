@@ -1,0 +1,62 @@
+@import "styles/colors";
+
+.section {
+  margin-top: 100px;
+  padding: 100px 0;
+
+  background-color: $color-primary;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+    padding-bottom: 12px;
+
+    text-align: center;
+
+    color: $color-secondary;
+
+    font-size: 3rem;
+  }
+}
+
+.reviewsContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.slide {
+  overflow: auto;
+}
+
+.buttons {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.next,
+.back {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 275px;
+  color: #000;
+  background-color: $color-secondary;
+  border-radius: 3px;
+  font-weight: 500;
+  min-height: 50px;
+  padding: 0 40px;
+
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.back {
+  margin-right: 16px;
+}

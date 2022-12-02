@@ -1,0 +1,37 @@
+.locationContainer {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  align-items: center;
+}
+
+.city {
+  color: #FFF;
+  margin-left: 12px;
+}
+
+.choose {
+  color: #B0A063;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .city {
+    color: #B0A063;
+    cursor: pointer;
+  }
+
+  .choose {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .locationContainer {
+    display: none;
+  }
+}

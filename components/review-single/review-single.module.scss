@@ -1,0 +1,53 @@
+@import "styles/colors";
+
+.container {
+  display: grid;
+  align-content: space-between;
+  gap: 1rem;
+  grid-template-rows: 25px 1fr minmax(100px, auto);
+  padding-right: 24px;
+}
+
+.imageQuotes {
+  width: 25px;
+  height: 25px;
+}
+
+.avatar {
+  align-self: center;
+
+  border-radius: 50%;
+}
+
+.description {
+  margin: 0;
+  padding: 1rem 0;
+
+  color: $color-secondary;
+
+  font-family: serif;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.personInfo {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $color-white;
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .name {
+    padding-bottom: 1rem;
+
+    color: $color-secondary;
+
+    font-family: serif;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}

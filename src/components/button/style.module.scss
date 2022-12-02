@@ -1,0 +1,23 @@
+.buttonContainer {
+  background-color: #B0A063;
+  padding: 18px 30px 20px;
+  display: inline;
+  text-align: center;
+  border-radius: 6px;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+
+  &:hover {
+    background-color: #C4B88A;
+  }
+
+  &:active {
+    background-color: #897B45;
+  }
+}
